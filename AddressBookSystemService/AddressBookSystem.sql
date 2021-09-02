@@ -50,6 +50,14 @@ WHERE FirstName='Ritesh'
 DELETE FROM AddressBook
 WHERE FirstName='Jack'
 
+/* UC6-Retriving record based on City or state */
+SELECT *
+FROM AddressBook
+WHERE State='Bihar' OR City='Bhopal'
+SELECT *
+FROM AddressBook
+WHERE City='Patna'
+
 
 
 
