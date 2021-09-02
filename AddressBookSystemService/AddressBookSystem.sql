@@ -74,6 +74,23 @@ FROM AddressBook
 WHERE City='Patna'
 ORDER BY (FirstName)
 
+/* UC9-Identify by name or type */
+ALTER TABLE AddressBook
+ADD BookType varchar(20)
+
+UPDATE AddressBook
+SET BookType='Family'
+WHERE ID=1
+
+UPDATE AddressBook
+SET BookType='Profession'
+WHERE ID=4
+
+UPDATE AddressBook
+SET BookType='Friend'
+WHERE ID=2
+
+
 
 
 
