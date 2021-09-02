@@ -58,6 +58,18 @@ SELECT *
 FROM AddressBook
 WHERE City='Patna'
 
+/* UC7-Calculating the size of the record by state or city */
+
+SELECT COUNT(ID) AS Size, State
+FROM AddressBook
+GROUP BY State
+
+SELECT COUNT(FirstName) AS Size, City
+FROM AddressBook
+GROUP BY City
+
+
+
 
 
 
