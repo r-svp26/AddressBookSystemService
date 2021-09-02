@@ -90,6 +90,13 @@ UPDATE AddressBook
 SET BookType='Friend'
 WHERE ID=2
 
+/* UC10-Count based on type */
+SELECT COUNT(PhoneNumber) AS Size, BookType 
+FROM AddressBook
+GROUP BY BookType
+
+
+
 
 
 
