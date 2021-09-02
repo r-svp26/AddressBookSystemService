@@ -68,6 +68,12 @@ SELECT COUNT(FirstName) AS Size, City
 FROM AddressBook
 GROUP BY City
 
+/* UC8-Sort contact by city name */
+SELECT *
+FROM AddressBook
+WHERE City='Patna'
+ORDER BY (FirstName)
+
 
 
 
