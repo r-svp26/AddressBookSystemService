@@ -95,6 +95,11 @@ SELECT COUNT(PhoneNumber) AS Size, BookType
 FROM AddressBook
 GROUP BY BookType
 
+/* UC11- Add person to book type */
+INSERT INTO AddressBook VALUES ('Radha','Yadav','Wns','Delhi','Delhi',801500,7987210320,'radha10@gmail.com','Friend') 
+INSERT INTO AddressBook VALUES ('Shyam','Kumar','DNP','Patna','Bihar',800001,7987200001,'shyam@gmail.com','Family')
+
+
 
 
 
