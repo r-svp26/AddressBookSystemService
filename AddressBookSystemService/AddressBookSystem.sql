@@ -34,7 +34,22 @@ ALTER TABLE AddressBook
 ADD ID INT IDENTITY(1,1) PRIMARY KEY
 
 
--- Insert the data
+/* UC3-Insert data */
 INSERT INTO AddressBook (FirstName,LastName, Address, City, State, Zip, PhoneNumber, Email) VALUES ('Ritesh','Kumar','Khaspur','Patna','Bihar',801502,9907296689,'riteshk6341@gmail.com')
 INSERT INTO AddressBook VALUES ('Abhinav','Yadav','Khaspur','Patna','Bihar',801502,7987210395,'avik10@gmail.com') 
+
+/* UC4-Update data */
+UPDATE AddressBook
+SET City='Bhopal' 
+WHERE FirstName='Ritesh'
+UPDATE AddressBook
+SET Zip='402021' 
+WHERE FirstName='Ritesh'
+
+/* UC5-Delete data */
+DELETE FROM AddressBook
+WHERE FirstName='Jack'
+
+
+
 
