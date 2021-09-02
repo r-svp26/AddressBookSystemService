@@ -33,6 +33,7 @@ FROM AddressBook
 ALTER TABLE AddressBook
 ADD ID INT IDENTITY(1,1) PRIMARY KEY
 
+
 -- Insert the data
 INSERT INTO AddressBook (FirstName,LastName, Address, City, State, Zip, PhoneNumber, Email) VALUES ('Ritesh','Kumar','Khaspur','Patna','Bihar',801502,9907296689,'riteshk6341@gmail.com')
 INSERT INTO AddressBook VALUES ('Abhinav','Yadav','Khaspur','Patna','Bihar',801502,7987210395,'avik10@gmail.com') 
